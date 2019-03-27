@@ -1,7 +1,20 @@
 {
-  "lerna": "2.11.0",
-  "packages": [
-    "packages/*"
-  ],
-  "version": "1.0.12"
+	"lerna": "2.11.0",
+	"packages": [
+		"packages/*"
+	],
+	"version": "1.0.12",
+	"command": {
+		"publish": {
+			"allowBranch": [
+				"master",
+				"release/**"
+			],
+			"message": "chore(release): publish release"
+		},
+		"version": {
+			"conventionalCommits": true,
+			"changelogPreset": "angular"
+		}
+	}
 }
