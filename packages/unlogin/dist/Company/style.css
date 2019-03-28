@@ -1,30 +1,25 @@
 .unlogin .page-company .family {
-  width: 100%;
-}
+  width: 100%; }
 
 .unlogin .page-company .name {
   font-weight: bold;
   position: absolute;
   top: 32%;
-  left: 0.533333rem;
-}
+  left: 40px; }
 
 .unlogin .page-company .about {
-  font-size: 0.533333rem;
+  font-size: 40px;
   text-align: left;
-  padding: 0 0.533333rem;
-  color: #333;
-}
+  padding: 0 40px;
+  color: #333; }
 
 .unlogin .page-company .des {
   position: absolute;
-  left: 0.533333rem;
-  right: 0.533333rem;
-  top: 40%;
-}
+  left: 40px;
+  right: 40px;
+  top: 40%; }
 
 .unlogin .page-company .section {
-  font-size: 0.373333rem;
-  padding-bottom: 0.4rem;
-  line-height: 0.56rem;
-}
+  font-size: 28px;
+  padding-bottom: 30px;
+  line-height: 42px; }

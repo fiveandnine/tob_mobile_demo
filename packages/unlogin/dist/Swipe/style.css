@@ -1,37 +1,26 @@
 .unlogin .swipe {
   overflow: hidden;
-  height: 100%;
-}
-
-.unlogin .swipe .swipe-inner {
-  display: flex;
-  height: 100%;
-}
-
-.unlogin .swipe .swipe-item {
-  flex: 1;
-  float: left;
-  position: relative;
-  height: 100%;
-}
-
-.unlogin .swipe .swipe-pointer {
-  position: absolute;
-  top: 88%;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 0;
-}
-
-.unlogin .swipe .swipe-pointer-item {
-  width: 0.213333rem;
-  height: 0.213333rem;
-  border-radius: 0.106667rem;
-  background: #DDDDDD;
-  display: inline-block;
-  margin: 0 0.106667rem;
-}
-
-.unlogin .swipe .swipe-pointer-item.active {
-  background: #FF8833;
-}
+  height: 100%; }
+  .unlogin .swipe .swipe-inner {
+    display: flex;
+    height: 100%; }
+  .unlogin .swipe .swipe-item {
+    flex: 1;
+    float: left;
+    position: relative;
+    height: 100%; }
+  .unlogin .swipe .swipe-pointer {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0; }
+  .unlogin .swipe .swipe-pointer-item {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #DDDDDD;
+    display: inline-block;
+    margin: 0 8px; }
+    .unlogin .swipe .swipe-pointer-item.active {
+      background: #FF8833; }

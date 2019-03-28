@@ -1,11 +1,10 @@
 .unlogin .page-partner .title {
-  font-size: 0.613333rem;
+  font-size: 46px;
   color: #333333;
   width: 100%;
   position: absolute;
   top: 10%;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .unlogin .page-partner .item {
   position: absolute;
@@ -13,26 +12,21 @@
   width: 100%;
   overflow: hidden;
   left: 0;
-  line-height: 0;
-}
+  line-height: 0; }
 
 .unlogin .page-partner .logo {
-  width: 3.733333rem;
-  height: 1.333333rem;
-  margin: 0.333333rem 0.2rem;
+  width: 280px;
+  height: 100px;
+  margin: 25px 15px;
   box-sizing: content-box;
   display: inline-block;
   overflow: hidden;
   background: #FFFFFF;
   border: 1PX solid #EEEEEE;
-  border-radius: 0.053333rem;
-  vertical-align: top;
-}
-
-.unlogin .page-partner .logo img {
-  width: 100%;
-}
+  border-radius: 4px;
+  vertical-align: top; }
+  .unlogin .page-partner .logo img {
+    width: 100%; }
 
 .unlogin .page-partner .swipe-pointer {
-  top: 82%;
-}
+  top: 82%; }

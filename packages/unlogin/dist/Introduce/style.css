@@ -1,69 +1,53 @@
 @media screen and (max-width: 350px) {
   .unlogin .page-introduce .swipe {
-    transform: translateY(-0.266667rem);
-  }
-}
+    transform: translateY(-20px); } }
 
 @media screen and (max-height: 560px) {
   .unlogin .page-introduce .swipe-pointer {
-    transform: translate(-50%, 0.133333rem);
-  }
-}
+    transform: translate(-50%, 10px); } }
 
 .unlogin .page-introduce .top {
   text-align: left;
   position: absolute;
   top: 7vh;
-  left: 0.8rem;
-}
+  left: 60px; }
 
 .unlogin .page-introduce .title {
-  font-size: 0.746667rem;
-  color: #333333;
-}
+  font-size: 56px;
+  color: #333333; }
 
 .unlogin .page-introduce .desc {
-  font-size: 0.426667rem;
+  font-size: 32px;
   color: #999999;
-  margin-top: 0.08rem;
-}
+  margin-top: 6px; }
 
 .unlogin .page-introduce .info {
-  font-size: 0.373333rem;
+  font-size: 28px;
   color: #333333;
   position: absolute;
   top: 21vh;
-  left: 0.8rem;
+  left: 60px;
   text-align: left;
-  line-height: 2;
-}
+  line-height: 2; }
 
 .unlogin .page-introduce .item:before {
   content: '';
   display: inline-block;
   vertical-align: center;
-  width: 0.16rem;
-  height: 0.16rem;
+  width: 12px;
+  height: 12px;
   background: url("./point.png") 100%/100%;
-  margin-right: 0.213333rem;
-  transform: translateY(-0.053333rem);
-}
+  margin-right: 16px;
+  transform: translateY(-4px); }
 
 .unlogin .page-introduce .animation {
   position: absolute;
   left: 50%;
   top: 34vh;
-  transform: translateX(-50%);
-}
-
-@media screen and (max-height: 560px) {
-  .unlogin .page-introduce .animation {
-    top: 30vh;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .unlogin .page-introduce .animation {
-    top: 24vh;
-  }
-}
+  transform: translateX(-50%); }
+  @media screen and (max-height: 560px) {
+    .unlogin .page-introduce .animation {
+      top: 30vh; } }
+  @media screen and (max-width: 350px) {
+    .unlogin .page-introduce .animation {
+      top: 24vh; } }

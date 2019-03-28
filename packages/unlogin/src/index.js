@@ -24,7 +24,6 @@ export default class extends PureComponent {
     handlerSubmit = () => {
         this.setState({index: this.state.index + 1});
     };
-
     render() {
         const index = this.state.index;
         const {ApplyPage, hypeHeader} = this.props;

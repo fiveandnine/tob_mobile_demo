@@ -25,7 +25,7 @@ exports.default = function () {
         _react2.default.createElement(
             'div',
             { className: 'foot' },
-            '\u5173\u6CE8\u6211\u4EEC, \u4E86\u89E3\u66F4\u591A'
+            '\u5173\u6CE8\u6211\u4EEC, \u4E86\u89E3\u66F4\u591A!ssss'
         )
     );
 };
