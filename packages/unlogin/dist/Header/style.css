@@ -1,0 +1,32 @@
+.unlogin-page-header {
+  position: absolute;
+  top: 0;
+  height: 108px;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.15);
+  z-index: 2;
+  width: 100%;
+  text-align: right;
+  transition: 0.5s ease; }
+  .unlogin-page-header.black {
+    background: #3E424E; }
+  .unlogin-page-header .logo {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+    .unlogin-page-header .logo:after {
+      content: '';
+      display: block;
+      background: url("../logo.svg") 100%/100%;
+      width: 134px;
+      height: 44px; }
+  .unlogin-page-header .see {
+    display: inline-block;
+    margin: 20px;
+    padding: 16px 28px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 28px; }

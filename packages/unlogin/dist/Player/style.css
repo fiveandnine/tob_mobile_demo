@@ -1,0 +1,10 @@
+.player-layer.active {
+  position: inherit;
+  height: 100%;
+  width: 100%;
+  z-index: 98;
+  background: rgba(0, 0, 0, 0.75); }
+
+.player-layer .prism-player {
+  z-index: 990;
+  background: rgba(0, 0, 0, 0); }

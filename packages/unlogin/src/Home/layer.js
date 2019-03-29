@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { has } from 'lodash'
 
 export default (WrappedComponent)=>{
     return class {
         constructor(props){
+          console.log(props)
             this._layer=document.createElement('div');
-            this._layer.className='layer unlogin';
+            this._layer.className=`layer unlogin ${props && props.className ? props && props.className : ''}`;
             document.body.appendChild(this._layer);
             this.props=Object.assign({},props);
             this.reactLayer=this._render();

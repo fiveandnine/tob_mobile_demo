@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>社交内推icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="深色" transform="translate(-260.000000, -2330.000000)" fill-rule="nonzero">
+            <g id="分组-17" transform="translate(160.000000, 1998.000000)">
+                <g id="分组-14" transform="translate(0.000000, 316.000000)">
+                    <g id="社交内推icon" transform="translate(100.000000, 16.000000)">
+                        <polygon id="Rectangle" fill="#FFFFFF" points="18.2222222 44.4444444 28.2222222 44.4444444 28.2222222 23.3333333 72.4444444 23.3333333 72.4444444 72.2222222 18.2222222 72.2222222"></polygon>
+                        <rect id="矩形" fill="#0F5AFF" opacity="0.1" x="22" y="46" width="9" height="25"></rect>
+                        <polygon id="路径" fill="#0F5AFF" points="36.8888889 70 36.8888889 72.2222222 20.2222222 72.2222222 20.2222222 44.4444444 30.2222222 44.4444444 30.2222222 23.3333333 72.4444444 23.3333333 72.4444444 72.2222222 65.6666667 72.2222222 65.6666667 70 70.2222222 70 70.2222222 25.5555556 32.4444444 25.5555556 32.4444444 46.6666667 22.4444444 46.6666667 22.4444444 70"></polygon>
+                        <polygon id="路径" fill="#0F5AFF" points="32.4444444 45.5555556 32.4444444 70 30.2222222 70 30.2222222 45.5555556"></polygon>
+                        <polygon id="Rectangle" fill="#0F5AFF" opacity="0.2" points="39.5 40 63.5 40 63.5 44.4444444 39.5 44.4444444"></polygon>
+                        <polygon id="Rectangle" fill="#0F5AFF" opacity="0.2" points="39.5 32 63.5 32 63.5 36.4444444 39.5 36.4444444"></polygon>
+                        <polygon id="Path" fill="#0F5AFF" points="63.5 52 39.5 52 39.5 82.3770876 51.5 76.6704209 63.5 82.3770876"></polygon>
+                        <polygon id="Star" fill="#FFFFFF" points="51.2803768 68.8888889 47.3618084 70.9490022 48.1101884 66.5856122 44.94 63.4954423 49.3210926 62.8588322 51.2803768 58.8888889 53.2396609 62.8588322 57.6207536 63.4954423 54.4505652 66.5856122 55.1989451 70.9490022"></polygon>
+                        <rect id="矩形" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

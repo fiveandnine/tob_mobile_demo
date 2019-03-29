@@ -28,6 +28,8 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _lodash = require('lodash');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (WrappedComponent) {
@@ -42,8 +44,9 @@ exports.default = function (WrappedComponent) {
                 _reactDom2.default.unmountComponentAtNode(_this._layer);
             };
 
+            console.log(props);
             this._layer = document.createElement('div');
-            this._layer.className = 'layer unlogin';
+            this._layer.className = 'layer unlogin ' + (props && props.className ? props && props.className : '');
             document.body.appendChild(this._layer);
             this.props = (0, _assign2.default)({}, props);
             this.reactLayer = this._render();

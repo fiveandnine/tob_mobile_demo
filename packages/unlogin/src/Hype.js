@@ -47,3 +47,4 @@ export default class extends PureComponent{
         </div>
     }
 }
+/*<Hype  className="animation" header={hypeHeader} name="bannerdonghua" running={running}/>*/

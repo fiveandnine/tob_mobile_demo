@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>云人才库icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="云人才库icon">
+            <polygon id="Rectangle-Copy-2" fill="#FFFFFF" fill-rule="nonzero" points="22.2222222 23.3333333 77.7777778 23.3333333 77.7777778 53.3333333 22.2222222 53.3333333"></polygon>
+            <path d="M24.2222222,25.3333333 L24.2222222,51.3333333 L75.7777778,51.3333333 L75.7777778,25.3333333 L24.2222222,25.3333333 Z M22.2222222,23.3333333 L77.7777778,23.3333333 L77.7777778,53.3333333 L22.2222222,53.3333333 L22.2222222,23.3333333 Z" id="Rectangle" fill="#0F5AFF" fill-rule="nonzero"></path>
+            <polygon id="Rectangle" fill="#E7EEFF" fill-rule="nonzero" points="22.2222222 60 77.7777778 60 77.7777778 76.6666667 22.2222222 76.6666667"></polygon>
+            <path d="M24.2222222,74.6666667 L75.7777778,74.6666667 L75.7777778,62 L24.2222222,62 L24.2222222,74.6666667 Z M22.2222222,60 L77.7777778,60 L77.7777778,76.6666667 L22.2222222,76.6666667 L22.2222222,60 Z" id="Rectangle-Copy" fill="#0F5AFF" fill-rule="nonzero"></path>
+            <path d="M43.3333333,66.6666667 L52.2222222,66.6666667 L52.2222222,70 L43.3333333,70 L43.3333333,66.6666667 Z M31.1111111,66.6666667 L40,66.6666667 L40,70 L31.1111111,70 L31.1111111,66.6666667 Z" id="Shape" fill="#2D6EFF" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#0F5AFF" fill-rule="nonzero" points="31.1111111 31.1111111 48.8888889 31.1111111 48.8888889 45.5555556 31.1111111 45.5555556"></polygon>
+            <polygon id="Path" fill="#0F5AFF" fill-rule="nonzero" opacity="0.2" points="54.4444444 31.1111111 61.1111111 31.1111111 61.1111111 45.5555556 54.4444444 45.5555556"></polygon>
+            <polygon id="Path" fill="#0F5AFF" fill-rule="nonzero" opacity="0.2" points="63.3333333 31.1111111 70 31.1111111 70 45.5555556 63.3333333 45.5555556"></polygon>
+            <rect id="Rectangle-6-Copy-8" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+        </g>
+    </g>
+</svg>

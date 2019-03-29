@@ -125,5 +125,7 @@ var _class = function (_PureComponent) {
     }]);
     return _class;
 }(_react.PureComponent);
+/*<Hype  className="animation" header={hypeHeader} name="bannerdonghua" running={running}/>*/
+
 
 exports.default = _class;

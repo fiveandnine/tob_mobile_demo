@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
@@ -28,37 +28,45 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Home = require('./Home');
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _Introduce = require('./Introduce');
-
-var _Introduce2 = _interopRequireDefault(_Introduce);
-
 var _Page = require('./Page');
 
 var _Page2 = _interopRequireDefault(_Page);
 
-var _Company = require('./Company');
+var _Header = require('./Header');
 
-var _Company2 = _interopRequireDefault(_Company);
+var _Header2 = _interopRequireDefault(_Header);
 
-var _Honor = require('./Honor');
+var _Home = require('./Home');
 
-var _Honor2 = _interopRequireDefault(_Honor);
+var _Home2 = _interopRequireDefault(_Home);
+
+var _Aikey = require('./Aikey');
+
+var _Aikey2 = _interopRequireDefault(_Aikey);
+
+var _Botready = require('./Botready');
+
+var _Botready2 = _interopRequireDefault(_Botready);
+
+var _Plan = require('./Plan');
+
+var _Plan2 = _interopRequireDefault(_Plan);
+
+var _Success = require('./Success');
+
+var _Success2 = _interopRequireDefault(_Success);
+
+var _Iso = require('./Iso');
+
+var _Iso2 = _interopRequireDefault(_Iso);
 
 var _Partner = require('./Partner');
 
 var _Partner2 = _interopRequireDefault(_Partner);
 
-var _Apply = require('./Apply');
+var _contain = require('./Apply/contain');
 
-var _Apply2 = _interopRequireDefault(_Apply);
-
-var _Follow = require('./Follow');
-
-var _Follow2 = _interopRequireDefault(_Follow);
+var _contain2 = _interopRequireDefault(_contain);
 
 require('./style.css');
 
@@ -70,54 +78,60 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @description: tob未登录引导页 ;
  * */
 var _class = function (_PureComponent) {
-    (0, _inherits3.default)(_class, _PureComponent);
+  (0, _inherits3.default)(_class, _PureComponent);
 
-    function _class() {
-        var _ref;
+  function _class() {
+    var _ref;
 
-        var _temp, _this, _ret;
+    var _temp, _this, _ret;
 
-        (0, _classCallCheck3.default)(this, _class);
+    (0, _classCallCheck3.default)(this, _class);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = _class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            index: 0
-        }, _this.handlerChange = function (index) {
-            _this.setState({ index: index });
-        }, _this.handlerSubmit = function () {
-            _this.setState({ index: _this.state.index + 1 });
-        }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
     }
 
-    (0, _createClass3.default)(_class, [{
-        key: 'render',
-        value: function render() {
-            var index = this.state.index;
-            var _props = this.props,
-                ApplyPage = _props.ApplyPage,
-                hypeHeader = _props.hypeHeader;
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = _class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      index: 0
+    }, _this.handlerChange = function (index) {
+      _this.setState({ index: index });
+    }, _this.handlerSubmit = function () {
+      _this.setState({ index: _this.state.index + 1 });
+    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+  }
 
-            return _react2.default.createElement(
-                _Page2.default,
-                { className: 'unlogin screen', index: this.state.index, onChange: this.handlerChange },
-                _react2.default.createElement(_Home2.default, { hypeHeader: hypeHeader, running: index === 0, ApplyPage: ApplyPage }),
-                _react2.default.createElement(_Introduce2.default, { hypeHeader: hypeHeader, running: index === 1 }),
-                _react2.default.createElement(_Company2.default, null),
-                _react2.default.createElement(_Honor2.default, null),
-                _react2.default.createElement(_Partner2.default, null),
-                _react2.default.createElement(
-                    _Apply2.default,
-                    null,
-                    _react2.default.createElement(ApplyPage, { onSubmit: this.handlerSubmit })
-                ),
-                _react2.default.createElement(_Follow2.default, null)
-            );
-        }
-    }]);
-    return _class;
+  (0, _createClass3.default)(_class, [{
+    key: 'render',
+    value: function render() {
+      var index = this.state.index;
+      var ApplyPage = this.props.ApplyPage;
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_Header2.default, { type: index, ApplyPage: ApplyPage }),
+        _react2.default.createElement(
+          _Page2.default,
+          { className: 'unlogin screen',
+            index: this.state.index,
+            onChange: this.handlerChange },
+          _react2.default.createElement(_Home2.default, null),
+          _react2.default.createElement(_Aikey2.default, null),
+          _react2.default.createElement(_Botready2.default, null),
+          _react2.default.createElement(_Plan2.default, null),
+          _react2.default.createElement(_Success2.default, null),
+          _react2.default.createElement(_Iso2.default, null),
+          _react2.default.createElement(_Partner2.default, null),
+          _react2.default.createElement(
+            _contain2.default,
+            null,
+            _react2.default.createElement(ApplyPage, { onSubmit: this.handlerSubmit })
+          )
+        )
+      );
+    }
+  }]);
+  return _class;
 }(_react.PureComponent);
 
 exports.default = _class;

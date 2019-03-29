@@ -1,0 +1,34 @@
+.unlogin .page-aikey .logo {
+  display: block;
+  width: 123px;
+  margin: 64px auto 0; }
+
+.unlogin .page-aikey .title {
+  display: block;
+  width: 514px;
+  margin: 40px auto; }
+
+.unlogin .page-aikey .Aicard-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+  .unlogin .page-aikey .Aicard-contain .Aicard {
+    width: 230px; }
+    .unlogin .page-aikey .Aicard-contain .Aicard .Aicard-logo {
+      height: 60px; }
+    .unlogin .page-aikey .Aicard-contain .Aicard .AIcard-title {
+      font-size: 30px;
+      color: #111111;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 30px; }
+      .unlogin .page-aikey .Aicard-contain .Aicard .AIcard-title:after {
+        content: "";
+        position: relative;
+        top: 2px;
+        margin-left: 2px;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        background: url("../playButton.svg") center/100% no-repeat; }

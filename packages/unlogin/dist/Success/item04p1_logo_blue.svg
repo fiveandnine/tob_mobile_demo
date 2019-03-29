@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>人才战略落地咨询服务icon 蓝色</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="人才战略落地咨询服务icon" fill-rule="nonzero">
+            <g>
+                <g id="分组-30" transform="translate(11.000000, 15.000000)">
+                    <path d="M47.000021,2 C47.000021,1.44771525 46.5523057,1 46.000021,1 L9,1 C8.44771525,1 8,1.44771525 8,2 L8,52.0000296 C8,52.5523143 8.44771525,53.0000296 9,53.0000296 L46.000021,53.0000296 C46.5523057,53.0000296 47.000021,52.5523143 47.000021,52.0000296 L47.000021,2 Z" id="矩形" stroke="#0F5AFF" stroke-width="2" fill="#E7EEFF"></path>
+                    <path d="M22,12 C21.4477153,12 21,12.4477153 21,13 L21,37 C21,37.5522847 21.4477153,38 22,38 L50.1114562,38 C51.508662,38 52.8866796,38.3253058 54.1363785,38.9501553 L59,41.381966 L59,13 C59,12.4477153 58.5522847,12 58,12 L22,12 Z" id="矩形" stroke="#0F5AFF" stroke-width="2" fill="#FFFFFF"></path>
+                    <g id="分组-29" transform="translate(32.500000, 21.000000)" fill="#0F5AFF">
+                        <rect id="矩形" x="0" y="0" width="3" height="8" rx="1"></rect>
+                        <rect id="矩形" x="6" y="0" width="3" height="8" rx="1"></rect>
+                        <rect id="矩形" x="12" y="0" width="3" height="8" rx="1"></rect>
+                    </g>
+                    <path d="M8,53 L8,1 L2,1 C1.44771525,1 1,1.44771525 1,2 L1,52 C1,52.5522847 1.44771525,53 2,53 L8,53 Z" id="矩形" stroke="#0F5AFF" stroke-width="2" fill="#FFFFFF"></path>
+                </g>
+                <rect id="矩形" fill="#FFFFFF" opacity="0" x="0" y="0" width="80" height="80"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

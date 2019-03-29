@@ -57,11 +57,44 @@
     background: #fff;
     width: 100%;
     height: 100%;
+    z-index: 100;
     .close{
       position: absolute;
       right: 30px;
       top:30px;
       padding: 10px;
+      &:after{
+        content:'';
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url('./close.svg') 100% / 100%;
+      }
+    }
+  }
+  &.show-module{
+    background: rgba(0,0,0, 0.5);
+    .show-module-body{
+      height: 578px;
+      width: 460px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 30px 0 rgba(0,0,0,0.20);
+      border-radius: 32px;
+      padding: 70px 60px 56px 60px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 auto;
+    }
+    .close{
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: -58px;
+      border-radius: 100%;
+      top: auto;
+      padding: 10px;
+      border: 2px solid rgba(255,255,255,0.70);
       &:after{
         content:'';
         display: block;

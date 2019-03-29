@@ -1,5 +1,5 @@
 .unlogin .page-home{
-  background: -webkit-linear-gradient(left top,#ff6e00,#ff3c00);
+  background: linear-gradient(131deg,rgba(20,50,124, 0.7),rgba(11,35,88, 0.7)), url('./bg.jpg') center / cover no-repeat;
   .logo{
     position: absolute;
     top:40px;
@@ -7,51 +7,71 @@
     &:after{
       content:'';
       display: block;
-      background: url('./logo.svg') 100% / 100%;
+      background: url('../logo.svg') 100% / 100%;
       width: 134px;
       height: 44px;
     }
   }
-  .animation{
-    position: absolute;
-    top:10%;
-    left: 50%;
-    transform: translateX(-50%);
-    $self:&;
-    @media screen and (max-width: 350px) {
-      top:0%;
-    }
-  }
   .slogan{
     position: absolute;
-    top:62%;
+    top:28%;
     left: 50%;
     transform: translateX(-50%);
     &:after{
       content:'';
       display: block;
-      background: url('./slogan.svg') 100% / 100%;
-      width: 690px;
-      height: 70px;
+      background: url('./slogan.svg') center / 100% no-repeat;
+      width: 640px;
+      height: 80px;
+    }
+
+    &:before{
+      content:'';
+      display: block;
+      background: url('./jiang.svg') 100% / 100%;
+      width: 90px;
+      height: 37px;
+      margin-bottom: 18px;
+    }
+  }
+  .slogan-sub{
+    position: absolute;
+    top:39%;
+    left: 50%;
+    transform: translateX(-50%);
+    &:after{
+      content:'';
+      display: block;
+      background: url('./slogan_sub.svg') center / 100% no-repeat;
+      width: 553px;
+      height: 80px;
     }
   }
   .bottom{
     position: absolute;
-    top:74%;
+    top:55%;
     left: 0;
     width: 100%;
   }
   .button{
-    width: 68%;
-    height: 80px;
+    width: 60%;
+    height: 90px;
     margin: 3% auto 4%;
     display: block;
-    background: #fff;
+    background: #2775FF;
     border: none;
     font-size: 32px;
-    color: #FD6200;
-    border-radius: 8px;
+    color: #fff;
+    border-radius: 90px;
     font-weight: bold;
+    box-shadow: 0 30px 30px 0 rgba(21,32,90,0.30);
+  }
+  .button-login{
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 32px;
   }
   .desc{
     font-size: 28px;
