@@ -7,6 +7,8 @@ import resumePortrait from "./resumePortrait.svg";
 import talentQuality from "./talentquality.svg";
 import introduction from "./introduction.svg"
 import aits from "./aits.svg"
+import layer from "../Home/layer";
+import Player from "../Player";
 
 //  ai为钥匙
 const Aikey =  [{
@@ -47,7 +49,7 @@ const Aikey =  [{
   t: 'before_login_viedo_talent_quality'
 }, {
   logo: introduction,
-  subTitle: "人才大数据",
+  subTitle: "行业洞察",
   describe: ['宏观展现行业人才数据动态', '洞悉人才流动趋势'],
   type: 'ali',
   vedio: {
@@ -57,8 +59,9 @@ const Aikey =  [{
 }]
 
 export default class extends PureComponent {
-  play(item){
-    console.log(item)
+  handlerPlay(parmas) {
+    const ApplyLayer = layer(({ destroy }) => <Player parmas={parmas} destroy={destroy}/>);
+    new ApplyLayer({className: "show-module"});
   }
   render() {
     return (
@@ -71,7 +74,7 @@ export default class extends PureComponent {
             return(
               <div className="Aicard" key={index}>
                 <img className="Aicard-logo" src={item.logo}/>
-                <div className="AIcard-title" onClick={this.play.bind(this, item)}>{item.subTitle}</div>
+                <div className="AIcard-title" onClick={this.handlerPlay.bind(this, item.vedio)}>{item.subTitle}</div>
               </div>
             )
           })

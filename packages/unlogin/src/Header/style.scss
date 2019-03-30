@@ -24,7 +24,10 @@
   }
   .see{
     display: inline-block;
-    margin: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
     padding: 16px 28px;
     border: 2px solid rgba(255,255,255,0.60);
     border-radius: 30px;
@@ -32,6 +35,6 @@
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
-    line-height: 28px;
+    line-height: 30px;
   }
 }

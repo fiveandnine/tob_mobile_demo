@@ -1,3 +1,14 @@
-.unlogin .page-iso{
+.unlogin .page-iso {
+  .title {
+    display: block;
+    &:nth-of-type(1) {
+      width: 56px;
+      margin: 172px auto 0;
+    }
+    &:nth-of-type(2) {
+      width: 517px;
+      margin: 32px auto 23px;
+    }
 
+  }
 }

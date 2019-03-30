@@ -58,6 +58,14 @@ var _aits = require('./aits.svg');
 
 var _aits2 = _interopRequireDefault(_aits);
 
+var _layer = require('../Home/layer');
+
+var _layer2 = _interopRequireDefault(_layer);
+
+var _Player = require('../Player');
+
+var _Player2 = _interopRequireDefault(_Player);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //  ai为钥匙
@@ -99,7 +107,7 @@ var Aikey = [{
   t: 'before_login_viedo_talent_quality'
 }, {
   logo: _introduction2.default,
-  subTitle: "人才大数据",
+  subTitle: "行业洞察",
   describe: ['宏观展现行业人才数据动态', '洞悉人才流动趋势'],
   type: 'ali',
   vedio: {
@@ -117,9 +125,13 @@ var _class = function (_PureComponent) {
   }
 
   (0, _createClass3.default)(_class, [{
-    key: 'play',
-    value: function play(item) {
-      console.log(item);
+    key: 'handlerPlay',
+    value: function handlerPlay(parmas) {
+      var ApplyLayer = (0, _layer2.default)(function (_ref) {
+        var destroy = _ref.destroy;
+        return _react2.default.createElement(_Player2.default, { parmas: parmas, destroy: destroy });
+      });
+      new ApplyLayer({ className: "show-module" });
     }
   }, {
     key: 'render',
@@ -141,7 +153,7 @@ var _class = function (_PureComponent) {
               _react2.default.createElement('img', { className: 'Aicard-logo', src: item.logo }),
               _react2.default.createElement(
                 'div',
-                { className: 'AIcard-title', onClick: _this2.play.bind(_this2, item) },
+                { className: 'AIcard-title', onClick: _this2.handlerPlay.bind(_this2, item.vedio) },
                 item.subTitle
               )
             );

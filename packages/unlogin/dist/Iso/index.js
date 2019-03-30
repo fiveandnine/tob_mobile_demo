@@ -30,6 +30,14 @@ var _react2 = _interopRequireDefault(_react);
 
 require('./style.css');
 
+var _title = require('./title1.svg');
+
+var _title2 = _interopRequireDefault(_title);
+
+var _title3 = require('./title2.svg');
+
+var _title4 = _interopRequireDefault(_title3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _class = function (_PureComponent) {
@@ -46,7 +54,8 @@ var _class = function (_PureComponent) {
       return _react2.default.createElement(
         'div',
         { className: 'page page-iso' },
-        'page-iso'
+        _react2.default.createElement('img', { className: 'title', src: _title2.default }),
+        _react2.default.createElement('img', { className: 'title', src: _title4.default })
       );
     }
   }]);

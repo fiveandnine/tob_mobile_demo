@@ -26,7 +26,16 @@ export default class extends PureComponent {
   handlerSubmit = () => {
     this.setState({ index: this.state.index + 1 });
   };
-
+  componentDidMount() {
+    // 加入阿里云视频
+    let scriptAli = document.createElement("script");
+    scriptAli.src = 'https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js';
+    document.body.appendChild(scriptAli);
+    let linkAli = document.createElement("link");
+    linkAli.setAttribute('rel', 'stylesheet');
+    linkAli.href = 'https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css';
+    document.body.appendChild(linkAli);
+  }
   render() {
     const index = this.state.index;
     const { ApplyPage } = this.props;

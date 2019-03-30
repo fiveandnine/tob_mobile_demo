@@ -1,0 +1,37 @@
+.unlogin .page-plan .title1 {
+  display: block;
+  width: 380px;
+  margin: 172px auto 0; }
+
+.unlogin .page-plan .title2 {
+  display: block;
+  width: 380px;
+  margin: 24px auto 76px; }
+
+.unlogin .page-plan .plan-contain .plan-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 510px;
+  margin: 0 auto;
+  height: 132px;
+  border-top: 1px solid #DBE5FF; }
+  .unlogin .page-plan .plan-contain .plan-item .logo {
+    width: 120px;
+    height: 120px; }
+  .unlogin .page-plan .plan-contain .plan-item .title {
+    display: inline-block;
+    font-size: 30px;
+    color: #111111;
+    letter-spacing: 0;
+    line-height: 30px;
+    width: 300px; }
+    .unlogin .page-plan .plan-contain .plan-item .title .des {
+      font-size: 22px;
+      color: #666666;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 22px;
+      margin-top: 12px; }
+  .unlogin .page-plan .plan-contain .plan-item:nth-of-type(5) {
+    border-bottom: 1px solid #DBE5FF; }

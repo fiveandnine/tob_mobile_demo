@@ -1,3 +1,31 @@
 .unlogin .page-botready{
-
+  .logo{
+    display: block;
+    width: 149px;
+    height: 72px;
+    margin: 172px auto 0;
+  }
+  .title{
+    display: block;
+    width: 630px;
+    height: 44px;
+    margin: 40px auto 0;
+  }
+  .bot-contain{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-top: 110px;
+    .bot-item{
+      border: 1px solid #000;
+      height: 150px;
+      width: 260px;
+      &.bot{
+        width: 100px;
+      }
+      &:nth-of-type(1){
+        align-self: center;
+      }
+    }
+  }
 }

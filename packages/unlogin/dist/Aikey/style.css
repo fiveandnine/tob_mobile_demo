@@ -1,12 +1,12 @@
 .unlogin .page-aikey .logo {
   display: block;
   width: 123px;
-  margin: 64px auto 0; }
+  margin: 172px auto 0; }
 
 .unlogin .page-aikey .title {
   display: block;
   width: 514px;
-  margin: 40px auto; }
+  margin: 40px auto 20px; }
 
 .unlogin .page-aikey .Aicard-contain {
   display: flex;
@@ -14,21 +14,32 @@
   justify-content: center;
   align-content: center; }
   .unlogin .page-aikey .Aicard-contain .Aicard {
-    width: 230px; }
+    width: 230px;
+    height: 162px;
+    margin-top: 120px; }
     .unlogin .page-aikey .Aicard-contain .Aicard .Aicard-logo {
-      height: 60px; }
+      height: 120px;
+      width: 120px; }
     .unlogin .page-aikey .Aicard-contain .Aicard .AIcard-title {
       font-size: 30px;
       color: #111111;
       letter-spacing: 0;
       text-align: center;
-      line-height: 30px; }
+      width: 160px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 auto; }
       .unlogin .page-aikey .Aicard-contain .Aicard .AIcard-title:after {
         content: "";
         position: relative;
-        top: 2px;
-        margin-left: 2px;
+        top: 3px;
+        left: 3px;
         height: 30px;
         width: 30px;
         display: inline-block;
         background: url("../playButton.svg") center/100% no-repeat; }
+    .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(2) {
+      border-left: 1px solid #DBE5FF;
+      border-right: 1px solid #DBE5FF; }
+    .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(4) {
+      border-right: 1px solid #DBE5FF; }

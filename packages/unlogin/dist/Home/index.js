@@ -58,34 +58,21 @@ var _class = function (_PureComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = _class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call.apply(_ref, [this].concat(args))), _this), _this.video = null, _this.handlerClick = function () {
-      var ApplyPage = _this.props.ApplyPage,
-          ApplyLayer = (0, _layer2.default)(function (_ref2) {
-        var destroy = _ref2.destroy;
-        return _react2.default.createElement(
-          _Apply2.default,
-          null,
-          _react2.default.createElement('i', {
-            className: 'close', onClick: destroy }),
-          _react2.default.createElement(ApplyPage, {
-            onSubmit: destroy })
-        );
-      });
-
-      new ApplyLayer();
-    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = _class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call.apply(_ref, [this].concat(args))), _this), _this.video = null, _this.handlerClick = function () {}, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
   (0, _createClass3.default)(_class, [{
     key: 'handlerPlay',
     value: function handlerPlay(parmas) {
-      this.player.setPlayParams(parmas);
+      var ApplyLayer = (0, _layer2.default)(function (_ref2) {
+        var destroy = _ref2.destroy;
+        return _react2.default.createElement(_Player2.default, { parmas: parmas, destroy: destroy });
+      });
+      new ApplyLayer({ className: "show-module" });
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       return _react2.default.createElement(
         'div',
         { className: 'page page-home' },
@@ -97,13 +84,13 @@ var _class = function (_PureComponent) {
           _react2.default.createElement(
             'button',
             { className: 'button',
-              onClick: this.handlerPlay.bind(this, '//ic-material.oss-cn-shanghai.aliyuncs.com/videofinalversion/talentstrategy.mp4') },
+              onClick: this.handlerPlay.bind(this) },
             '\u6570\u5B57\u5316\u62DB\u8058'
           ),
           _react2.default.createElement(
             'button',
             { className: 'button',
-              onClick: this.handlerPlay.bind(this, '//ic-material.oss-cn-shanghai.aliyuncs.com/videofinalversion/talentstrategy.mp4') },
+              onClick: this.handlerPlay.bind(this) },
             '\u4EBA\u624D\u6218\u7565\u843D\u5730\u65B9\u6848'
           ),
           _react2.default.createElement(
@@ -112,10 +99,7 @@ var _class = function (_PureComponent) {
               onClick: this.handlerClick },
             '\u8D26\u53F7\u767B\u5F55'
           )
-        ),
-        _react2.default.createElement(_Player2.default, { ref: function ref(child) {
-            _this2.player = child;
-          } })
+        )
       );
     }
   }]);

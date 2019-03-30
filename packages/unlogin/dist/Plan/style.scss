@@ -1,3 +1,47 @@
 .unlogin .page-plan{
+  .title1{
+    display: block;
+    width: 380px;
+    margin: 172px auto 0;
+  }
+  .title2{
+    display: block;
+    width: 380px;
+    margin: 24px auto 76px;
+  }
+  .plan-contain{
+    .plan-item{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 510px;
+      margin: 0 auto;
+      height: 132px;
+      border-top: 1px solid #DBE5FF;
+      .logo{
+        width: 120px;
+        height: 120px;
+      }
+      .title{
+        display: inline-block;
+        font-size: 30px;
+        color: #111111;
+        letter-spacing: 0;
+        line-height: 30px;
+        width: 300px;
+        .des{
+          font-size: 22px;
+          color: #666666;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 22px;
+          margin-top: 12px;
+        }
+      }
+      &:nth-of-type(5){
+        border-bottom: 1px solid #DBE5FF;
+      }
 
+    }
+  }
 }
