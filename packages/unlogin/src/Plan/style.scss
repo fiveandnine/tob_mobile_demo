@@ -41,7 +41,16 @@
       &:nth-of-type(5){
         border-bottom: 1px solid #DBE5FF;
       }
-
+      &:after {
+        content: "";
+        position: relative;
+        top: 3px;
+        right: -36px;
+        height: 12px;
+        width: 6px;
+        display: inline-block;
+        background: url('./arrow.svg') center / 100% no-repeat;
+      }
     }
   }
 }

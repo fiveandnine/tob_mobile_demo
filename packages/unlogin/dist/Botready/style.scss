@@ -17,11 +17,20 @@
     justify-content: center;
     margin-top: 110px;
     .bot-item{
-      border: 1px solid #000;
       height: 150px;
-      width: 260px;
+      width: 300px;
+      margin: 20px 0 0 0;
+      img{
+        width: 100%;
+      }
       &.bot{
-        width: 100px;
+        width: 110px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        img{
+          margin-top: 24px;
+        }
       }
       &:nth-of-type(1){
         align-self: center;

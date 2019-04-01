@@ -3,30 +3,9 @@
   color: #333333;
   width: 100%;
   position: absolute;
-  top: 10%;
+  top: 188px;
   font-weight: bold; }
 
-.unlogin .page-partner .item {
-  position: absolute;
-  top: 21%;
-  width: 100%;
-  overflow: hidden;
-  left: 0;
-  line-height: 0; }
-
-.unlogin .page-partner .logo {
-  width: 280px;
-  height: 100px;
-  margin: 25px 15px;
-  box-sizing: content-box;
-  display: inline-block;
-  overflow: hidden;
-  background: #FFFFFF;
-  border: 1PX solid #EEEEEE;
-  border-radius: 4px;
-  vertical-align: top; }
-  .unlogin .page-partner .logo img {
-    width: 100%; }
-
-.unlogin .page-partner .swipe-pointer {
-  top: 82%; }
+.unlogin .page-partner .logo-milt {
+  width: 614px;
+  margin-top: 292px; }

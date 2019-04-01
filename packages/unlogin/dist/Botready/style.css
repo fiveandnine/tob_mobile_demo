@@ -16,10 +16,17 @@
   justify-content: center;
   margin-top: 110px; }
   .unlogin .page-botready .bot-contain .bot-item {
-    border: 1px solid #000;
     height: 150px;
-    width: 260px; }
+    width: 300px;
+    margin: 20px 0 0 0; }
+    .unlogin .page-botready .bot-contain .bot-item img {
+      width: 100%; }
     .unlogin .page-botready .bot-contain .bot-item.bot {
-      width: 100px; }
+      width: 110px;
+      display: flex;
+      justify-self: center;
+      align-items: center; }
+      .unlogin .page-botready .bot-contain .bot-item.bot img {
+        margin-top: 24px; }
     .unlogin .page-botready .bot-contain .bot-item:nth-of-type(1) {
       align-self: center; }

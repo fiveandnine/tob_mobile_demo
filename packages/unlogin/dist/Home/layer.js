@@ -1,7 +1,7 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
+Object.defineProperty(exports, '__esModule', {
+  value: true,
 });
 
 var _extends2 = require('babel-runtime/helpers/extends');
@@ -30,34 +30,40 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _lodash = require('lodash');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-exports.default = function (WrappedComponent) {
-    return function () {
-        function _class2(props) {
-            var _this = this;
+exports.default = function(WrappedComponent) {
+  return (function() {
+    function _class2(props) {
+      var _this = this;
 
-            (0, _classCallCheck3.default)(this, _class2);
+      (0, _classCallCheck3.default)(this, _class2);
 
-            this.destroy = function () {
-                document.body.removeChild(_this._layer);
-                _reactDom2.default.unmountComponentAtNode(_this._layer);
-            };
+      this.destroy = function() {
+        document.body.removeChild(_this._layer);
+        _reactDom2.default.unmountComponentAtNode(_this._layer);
+      };
 
-            console.log(props);
-            this._layer = document.createElement('div');
-            this._layer.className = 'layer unlogin ' + (props && props.className ? props && props.className : '');
-            document.body.appendChild(this._layer);
-            this.props = (0, _assign2.default)({}, props);
-            this.reactLayer = this._render();
-        }
+      this._layer = document.createElement('div');
+      this._layer.className = 'layer unlogin ' + (props && props.className ? props && props.className : '');
+      document.body.appendChild(this._layer);
+      this.props = (0, _assign2.default)({}, props);
+      this.reactLayer = this._render();
+    }
 
-        (0, _createClass3.default)(_class2, [{
-            key: '_render',
-            value: function _render() {
-                return _reactDom2.default.render(_react2.default.createElement(WrappedComponent, (0, _extends3.default)({}, this.props, { destroy: this.destroy })), this._layer);
-            }
-        }]);
-        return _class2;
-    }();
+    (0, _createClass3.default)(_class2, [
+      {
+        key: '_render',
+        value: function _render() {
+          return _reactDom2.default.render(
+            _react2.default.createElement(WrappedComponent, (0, _extends3.default)({}, this.props, { destroy: this.destroy })),
+            this._layer
+          );
+        },
+      },
+    ]);
+    return _class2;
+  })();
 };

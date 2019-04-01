@@ -6,3 +6,15 @@
   .unlogin .page-iso .title:nth-of-type(2) {
     width: 517px;
     margin: 32px auto 23px; }
+
+.unlogin .page-iso .des {
+  font-size: 28px;
+  color: #111111;
+  letter-spacing: 3.11px;
+  text-align: center;
+  line-height: 42px; }
+
+.unlogin .page-iso .iso {
+  width: 540px;
+  display: inline-block;
+  margin: 68px auto 0; }
