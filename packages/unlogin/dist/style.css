@@ -72,14 +72,12 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    bottom: -58px;
+    bottom: -140px;
     border-radius: 100%;
-    top: auto;
-    padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.7); }
+    top: auto; }
     .unlogin.show-module .close:after {
       content: '';
       display: block;
-      width: 32px;
-      height: 32px;
-      background: url("./close.svg") 100%/100%; }
+      width: 80px;
+      height: 80px;
+      background: url("./close-w.svg") 100%/100%; }

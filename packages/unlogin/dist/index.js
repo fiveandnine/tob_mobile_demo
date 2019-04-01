@@ -70,6 +70,14 @@ var _contain2 = _interopRequireDefault(_contain);
 
 require('./style.css');
 
+var _layer = require('./Home/layer');
+
+var _layer2 = _interopRequireDefault(_layer);
+
+var _ShareModule = require('./ShareModule');
+
+var _ShareModule2 = _interopRequireDefault(_ShareModule);
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -140,6 +148,8 @@ var _class = (function(_PureComponent) {
           _react2.default.createElement(
             _Page2.default,
             { className: 'unlogin screen', index: this.state.index, onChange: this.handlerChange },
+            _react2.default.createElement(_Home2.default, null),
+            _react2.default.createElement(_Aikey2.default, null),
             _react2.default.createElement(_Botready2.default, null),
             _react2.default.createElement(_Plan2.default, null),
             _react2.default.createElement(_Success2.default, null),

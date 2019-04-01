@@ -18,7 +18,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 87px 130px 0 87px; }
+  margin: 87px auto;
+  width: 500px; }
   .unlogin .page-success .success-contain .success-item {
     width: 245px;
     height: 250px; }

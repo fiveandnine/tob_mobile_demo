@@ -12,7 +12,7 @@
   }
   .logo{
     position: absolute;
-    top:40px;
+    top:34px;
     left: 40px;
     &:after{
       content:'';
@@ -30,11 +30,35 @@
     right: 40px;
     padding: 16px 28px;
     border: 2px solid rgba(255,255,255,0.60);
-    border-radius: 30px;
+    border-radius: 40px;
     font-size: 28px;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
     line-height: 30px;
+  }
+  .share{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    padding: 4px 0 0 28px;
+    border-radius: 40px;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    &:before{
+      content: "";
+      position: relative;
+      top: 2px;
+      left: -6px;
+      height: 26px;
+      width: 26px;
+      display: inline-block;
+      background: url('./share.svg') center / 100% no-repeat;
+    }
   }
 }

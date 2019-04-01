@@ -15,6 +15,8 @@ import Iso from './Iso';
 import Partner from './Partner';
 import ApplyContain from './Apply/contain';
 import './style.scss';
+import layer from './Home/layer';
+import ShowModule from './ShareModule';
 
 export default class extends PureComponent {
   state = {
@@ -43,8 +45,8 @@ export default class extends PureComponent {
       <div>
         <Header type={index} ApplyPage={ApplyPage} />
         <Page className="unlogin screen" index={this.state.index} onChange={this.handlerChange}>
-          {/*<Home />*/}
-          {/*<Aikey/>*/}
+          <Home />
+          <Aikey />
           <Botready />
           <Plan />
           <Success />

@@ -143,10 +143,7 @@ var _class = (function(_PureComponent) {
       (_this.handlerPlay = function(parmas) {
         var ApplyLayer = (0, _layer2.default)(function(_ref2) {
           var destroy = _ref2.destroy;
-          return _react2.default.createElement(_Player2.default, {
-            parmas: parmas,
-            destroy: destroy,
-          });
+          return _react2.default.createElement(_Player2.default, { parmas: parmas, destroy: destroy });
         });
         new ApplyLayer({ className: 'show-module' });
       }),
