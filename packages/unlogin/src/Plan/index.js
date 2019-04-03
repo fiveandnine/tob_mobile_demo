@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import classnames from 'classnames';
 import './style.scss';
 import title1 from './title1.svg';
 import title2 from './title2.svg';
@@ -63,7 +64,7 @@ export default class extends PureComponent {
   }
   render() {
     return (
-      <div className="page page-plan">
+      <div className={classnames('page page-plan', { reset: this.props.running })}>
         <img className="title1" src={title1} />
         <img className="title2" src={title2} />
         <div className="plan-contain">

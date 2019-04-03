@@ -1,5 +1,24 @@
+/*首屏背景滚动*/
+@-webkit-keyframes scrollBanner {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@keyframes scrollBanner {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 .unlogin .page-home{
   background: linear-gradient(131deg,rgba(20,50,124, 0.7),rgba(11,35,88, 0.7)), url('./bg.jpg') center / cover no-repeat;
+  -webkit-animation: scrollBanner 20s ease 1 forwards;
+  animation: scrollBanner 20s ease 1 forwards;
   .logo{
     position: absolute;
     top:40px;

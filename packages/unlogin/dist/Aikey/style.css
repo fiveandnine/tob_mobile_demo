@@ -1,18 +1,26 @@
 .unlogin .page-aikey .logo {
   display: block;
   width: 123px;
-  margin: 172px auto 0; }
+  margin: 172px auto 0;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.5s ease 0.2s; }
 
 .unlogin .page-aikey .title {
   display: block;
   width: 514px;
-  margin: 40px auto 20px; }
+  margin: 40px auto 20px;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.5s ease 0.3s; }
 
 .unlogin .page-aikey .Aicard-contain {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  opacity: 0;
+  transition: all 0.6s ease 0.4s; }
   .unlogin .page-aikey .Aicard-contain .Aicard {
     width: 230px;
     height: 162px;
@@ -38,8 +46,13 @@
         width: 30px;
         display: inline-block;
         background: url("../playButton.svg") center/100% no-repeat; }
-    .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(2) {
-      border-left: 1px solid #DBE5FF;
+    .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(1), .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(4) {
       border-right: 1px solid #DBE5FF; }
+    .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(3) {
+      border-left: 1px solid #DBE5FF; }
     .unlogin .page-aikey .Aicard-contain .Aicard:nth-of-type(4) {
       border-right: 1px solid #DBE5FF; }
+
+.unlogin .page-aikey.reset .logo, .unlogin .page-aikey.reset .title, .unlogin .page-aikey.reset .Aicard-contain {
+  opacity: 1;
+  transform: scale(1, 1) translate3d(0, 0, 0); }

@@ -15,8 +15,6 @@ import Iso from './Iso';
 import Partner from './Partner';
 import ApplyContain from './Apply/contain';
 import './style.scss';
-import layer from './Home/layer';
-import ShowModule from './ShareModule';
 
 export default class extends PureComponent {
   state = {
@@ -28,6 +26,7 @@ export default class extends PureComponent {
   handlerSubmit = () => {
     this.setState({ index: this.state.index + 1 });
   };
+
   componentDidMount() {
     // 加入阿里云视频
     let scriptAli = document.createElement('script');
@@ -38,6 +37,7 @@ export default class extends PureComponent {
     linkAli.href = 'https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css';
     document.body.appendChild(linkAli);
   }
+
   render() {
     const index = this.state.index;
     const { ApplyPage } = this.props;
@@ -46,12 +46,12 @@ export default class extends PureComponent {
         <Header type={index} ApplyPage={ApplyPage} />
         <Page className="unlogin screen" index={this.state.index} onChange={this.handlerChange}>
           <Home />
-          <Aikey />
-          <Botready />
-          <Plan />
-          <Success />
-          <Iso />
-          <Partner />
+          <Aikey running={this.state.index === 1} />
+          <Botready running={this.state.index === 2} />
+          <Plan running={this.state.index === 3} />
+          <Success running={this.state.index === 4} />
+          <Iso running={this.state.index === 5} />
+          <Partner running={this.state.index === 6} />
           <ApplyContain>
             <ApplyPage onSubmit={this.handlerSubmit} />
           </ApplyContain>

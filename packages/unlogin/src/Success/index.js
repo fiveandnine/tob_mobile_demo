@@ -8,6 +8,7 @@ import logo1 from './logo1.svg';
 import logo2 from './logo2.svg';
 import logo3 from './logo3.svg';
 import logo4 from './logo4.svg';
+import classnames from 'classnames';
 const success = [
   { logo: logo1, title: ['人才战略落地', '咨询服务'] },
   { logo: logo2, title: ['系统平台', '技术支持'] },
@@ -17,7 +18,7 @@ const success = [
 export default class extends PureComponent {
   render() {
     return (
-      <div className="page page-success">
+      <div className={classnames('page page-success', { reset: this.props.running })}>
         <div className="title-contain">
           <img className="title" src={title1} />
           <img className="title" src={title2} />

@@ -4,22 +4,35 @@
     width: 149px;
     height: 72px;
     margin: 172px auto 0;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
   }
   .title{
     display: block;
     width: 630px;
     height: 44px;
     margin: 40px auto 0;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.5s ease 0.3s;
   }
   .bot-contain{
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     margin-top: 110px;
+    &.reset{
+      .bot-item{
+        opacity: 1!important;
+        transform: scale(1, 1) translate3d(0, 0, 0)!important;
+      }
+    }
     .bot-item{
       height: 150px;
       width: 300px;
       margin: 20px 0 0 0;
+      transition: 0.5s cubic-bezier(0.895, 0.030, 0.685, 0.220);
       img{
         width: 100%;
       }
@@ -28,13 +41,49 @@
         display: flex;
         justify-self: center;
         align-items: center;
+        transform: scale(0.5);
+        transform-origin: center;
         img{
           margin-top: 24px;
         }
       }
       &:nth-of-type(1){
         align-self: center;
+        transform: translateX(20px) translateY(-20px) scale(0.5);
+        transform-origin: top right;
+        opacity: 0.4;
       }
+
+      &:nth-of-type(2){
+        align-self: center;
+        transform: translateX(-20px) translateY(-20px) scale(0.5);
+        transform-origin: top left;
+        opacity: 0.4;
+      }
+      &:nth-of-type(3){
+        align-self: center;
+        transform: translateX(20px) scale(0.5);
+        transform-origin: right;
+        opacity: 0.4;
+      }
+      &:nth-of-type(5){
+        align-self: center;
+        transform: translateX(-20px) scale(0.5);
+        transform-origin: left;
+        opacity: 0.4;
+      }
+      &:nth-of-type(6){
+        align-self: center;
+        transform: translateY(20px) scale(0.5);
+        transform-origin: bottom;
+        opacity: 0.4;
+      }
+    }
+  }
+  &.reset{
+    .logo,.title{
+      opacity: 1;
+      transform: scale(1, 1) translate3d(0, 0, 0);
     }
   }
 }

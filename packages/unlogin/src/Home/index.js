@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import layer from './layer';
 import Player from '../Player';
 import './style.scss';
-const talentStrategy = '//ic-material.oss-cn-shanghai.aliyuncs.com/videofinalversion/talentstrategy.mp4';
+const talentStrategy = '//player.alicdn.com/video/aliyunmedia.mp4';
 export default class extends PureComponent {
   video = null;
   handlerClick = () => {};

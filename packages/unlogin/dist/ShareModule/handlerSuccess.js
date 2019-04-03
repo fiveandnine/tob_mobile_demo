@@ -89,7 +89,7 @@ var _class = (function(_PureComponent) {
           _react2.default.createElement(
             'div',
             { className: 'des' },
-            '\u5206\u4EAB\u7ED9\u597D\u53CB\uFF0C\u5E2ETA\u62A2\u5360\u514D\u8D39\u4F7F\u7528\u673A\u4F1A\u6BCF\u6210\u529F\u63A8\u8350\u4E00\u4F4D\uFF0C\u60A8\u90FD\u5C06\u83B7\u5F97\u5FAE\u4FE1\u7EA2\u5305'
+            '\u5206\u4EAB\u5230\u670B\u53CB\u5708\uFF0C\u5373\u523B\u9886\u53D6\u968F\u673A\u7EA2\u5305\u4E00\u4E2A'
           ),
           _react2.default.createElement(
             'div',

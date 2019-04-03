@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 130 130" style="enable-background:new 0 0 130 130;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EDF4FF;}
+	.st1{fill:#2775FF;}
+	.st2{fill:#FFFFFF;}
+</style>
+<path id="Rectangle" class="st0" d="M35,18h60c5.5,0,10,4.5,10,10v74c0,5.5-4.5,10-10,10H35c-5.5,0-10-4.5-10-10V28
+	C25,22.5,29.5,18,35,18z"/>
+<path id="Rectangle_1_" class="st1" d="M35,21c-3.9,0-7,3.1-7,7v74c0,3.9,3.1,7,7,7h60c3.9,0,7-3.1,7-7V28c0-3.9-3.1-7-7-7H35z
+	 M35,15h60c7.2,0,13,5.8,13,13v74c0,7.2-5.8,13-13,13H35c-7.2,0-13-5.8-13-13V28C22,20.8,27.8,15,35,15z"/>
+<path id="Rectangle_2_" class="st0" d="M35,18h60c5.5,0,10,4.5,10,10v18C93.9,56.7,80.6,62,65,62s-28.9-5.3-40-16V28
+	C25,22.5,29.5,18,35,18z"/>
+<path id="Rectangle_3_" class="st1" d="M102,28c0-3.9-3.1-7-7-7H35c-3.9,0-7,3.1-7,7v16.7C38.3,54.3,50.6,59,65,59s26.7-4.7,37-14.3
+	V28z M35,15h60c7.2,0,13,5.8,13,13v19.3l-0.9,0.9C95.4,59.4,81.4,65,65,65s-30.4-5.6-42.1-16.8L22,47.3V28C22,20.8,27.8,15,35,15z"
+	/>
+<circle id="Oval" class="st2" cx="65" cy="61" r="10"/>
+<path id="Oval_1_" class="st1" d="M65,74c-7.2,0-13-5.8-13-13s5.8-13,13-13s13,5.8,13,13S72.2,74,65,74z M65,68c3.9,0,7-3.1,7-7
+	s-3.1-7-7-7s-7,3.1-7,7S61.1,68,65,68z"/>
+</svg>

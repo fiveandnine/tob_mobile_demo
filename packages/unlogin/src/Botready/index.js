@@ -10,6 +10,7 @@ import positionConsult from './positionConsult.png';
 import ssc from './ssc.png';
 import makeSure from './makeSure.png';
 import bot from './Bot.svg';
+import classnames from 'classnames';
 
 const botVedio = [
   {
@@ -64,10 +65,10 @@ export default class extends PureComponent {
 
   render() {
     return (
-      <div className="page page-botready">
+      <div className={classnames('page page-botready', { reset: this.props.running })}>
         <img className="logo" src={BotLog} />
         <img className="title" src={BotTitle} />
-        <div className="bot-contain">
+        <div className={classnames('bot-contain', { reset: this.props.running })}>
           {botVedio.map((item, index) => {
             return index === 3 ? (
               <div key={index} className="bot-item bot">

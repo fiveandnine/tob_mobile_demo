@@ -1,6 +1,9 @@
 .unlogin .page-iso {
   .title {
     display: block;
+    transform: translateY(200px);
+    transition: all 0.5s ease 0.3s;
+    opacity: 0;
     &:nth-of-type(1) {
       width: 56px;
       margin: 172px auto 0;
@@ -16,10 +19,21 @@
     letter-spacing: 3.11px;
     text-align: center;
     line-height: 42px;
+    transition: all 0.5s ease 0.3s;
+    transform: translateY(200px);
+    opacity: 0;
   }
   .iso{
     width: 540px;
+    opacity: 0;
+    transition: all 0.5s ease 0.3s;
     display: inline-block;
     margin: 68px auto 0;
+  }
+  &.reset{
+    .title,.des,.iso{
+      opacity: 1;
+      transform: scale(1, 1) translate3d(0, 0, 0);
+    }
   }
 }

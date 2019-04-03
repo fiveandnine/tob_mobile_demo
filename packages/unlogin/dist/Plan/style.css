@@ -1,46 +1,59 @@
 .unlogin .page-plan .title1 {
   display: block;
   width: 380px;
-  margin: 172px auto 0; }
+  margin: 172px auto 0;
+  transform: translateY(200px);
+  transition: all 0.5s ease 0.2s;
+  opacity: 0; }
 
 .unlogin .page-plan .title2 {
   display: block;
   width: 380px;
-  margin: 24px auto 76px; }
+  margin: 24px auto 76px;
+  transform: translateY(200px);
+  transition: all 0.5s ease 0.3s;
+  opacity: 0; }
 
-.unlogin .page-plan .plan-contain .plan-item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 510px;
-  margin: 0 auto;
-  height: 132px;
-  border-top: 1px solid #DBE5FF; }
-  .unlogin .page-plan .plan-contain .plan-item .logo {
-    width: 120px;
-    height: 120px; }
-  .unlogin .page-plan .plan-contain .plan-item .title {
-    display: inline-block;
-    font-size: 30px;
-    color: #111111;
-    letter-spacing: 0;
-    line-height: 30px;
-    width: 300px; }
-    .unlogin .page-plan .plan-contain .plan-item .title .des {
-      font-size: 22px;
-      color: #666666;
+.unlogin .page-plan .plan-contain {
+  opacity: 0;
+  transition: 0.5s ease-in; }
+  .unlogin .page-plan .plan-contain .plan-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 510px;
+    margin: 0 auto;
+    height: 132px;
+    border-top: 1px solid #DBE5FF; }
+    .unlogin .page-plan .plan-contain .plan-item .logo {
+      width: 120px;
+      height: 120px; }
+    .unlogin .page-plan .plan-contain .plan-item .title {
+      display: inline-block;
+      font-size: 30px;
+      color: #111111;
       letter-spacing: 0;
-      text-align: center;
-      line-height: 22px;
-      margin-top: 12px; }
-  .unlogin .page-plan .plan-contain .plan-item:nth-of-type(5) {
-    border-bottom: 1px solid #DBE5FF; }
-  .unlogin .page-plan .plan-contain .plan-item:after {
-    content: "";
-    position: relative;
-    top: 3px;
-    right: -36px;
-    height: 12px;
-    width: 6px;
-    display: inline-block;
-    background: url("./arrow.svg") center/100% no-repeat; }
+      line-height: 30px;
+      width: 300px; }
+      .unlogin .page-plan .plan-contain .plan-item .title .des {
+        font-size: 22px;
+        color: #666666;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+        margin-top: 12px; }
+    .unlogin .page-plan .plan-contain .plan-item:nth-of-type(5) {
+      border-bottom: 1px solid #DBE5FF; }
+    .unlogin .page-plan .plan-contain .plan-item:after {
+      content: "";
+      position: relative;
+      top: 3px;
+      right: -36px;
+      height: 12px;
+      width: 6px;
+      display: inline-block;
+      background: url("./arrow.svg") center/100% no-repeat; }
+
+.unlogin .page-plan.reset .title1, .unlogin .page-plan.reset .title2, .unlogin .page-plan.reset .plan-contain {
+  opacity: 1;
+  transform: scale(1, 1) translate3d(0, 0, 0); }

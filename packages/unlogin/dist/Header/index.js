@@ -38,9 +38,13 @@ var _Apply = require('../Apply');
 
 var _Apply2 = _interopRequireDefault(_Apply);
 
-var _ShareModule = require('../ShareModule');
+var _handlerSuccess = require('../ShareModule/handlerSuccess');
 
-var _ShareModule2 = _interopRequireDefault(_ShareModule);
+var _handlerSuccess2 = _interopRequireDefault(_handlerSuccess);
+
+var _handlerRedPacket = require('../ShareModule/handlerRedPacket');
+
+var _handlerRedPacket2 = _interopRequireDefault(_handlerRedPacket);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
@@ -73,13 +77,8 @@ var _class = (function(_PureComponent) {
             return _react2.default.createElement(
               _Apply2.default,
               null,
-              _react2.default.createElement('i', {
-                className: 'close',
-                onClick: destroy,
-              }),
-              _react2.default.createElement(ApplyPage, {
-                onSubmit: destroy,
-              })
+              _react2.default.createElement('i', { className: 'close', onClick: destroy }),
+              _react2.default.createElement(ApplyPage, { onSubmit: destroy })
             );
           });
 
@@ -88,7 +87,7 @@ var _class = (function(_PureComponent) {
       (_this.handlerShare = function() {
         var ApplyLayer = (0, _layer2.default)(function(_ref3) {
           var destroy = _ref3.destroy;
-          return _react2.default.createElement(_ShareModule2.default, { destroy: destroy });
+          return _react2.default.createElement(_handlerRedPacket2.default, { type: 'redpacket', destroy: destroy });
         });
         new ApplyLayer({ className: 'show-module' });
       }),
@@ -105,9 +104,7 @@ var _class = (function(_PureComponent) {
 
         return _react2.default.createElement(
           'div',
-          {
-            className: type === 0 ? 'unlogin-page-header' : 'unlogin-page-header black',
-          },
+          { className: type === 0 ? 'unlogin-page-header' : 'unlogin-page-header black' },
           _react2.default.createElement('i', { className: 'logo' }),
           type === 7
             ? _react2.default.createElement('span', { className: 'share', onClick: this.handlerShare }, '\u5206\u4EAB\u6709\u793C')

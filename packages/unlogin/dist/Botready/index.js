@@ -70,6 +70,10 @@ var _Bot = require('./Bot.svg');
 
 var _Bot2 = _interopRequireDefault(_Bot);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -143,7 +147,10 @@ var _class = (function(_PureComponent) {
       (_this.handlerPlay = function(parmas) {
         var ApplyLayer = (0, _layer2.default)(function(_ref2) {
           var destroy = _ref2.destroy;
-          return _react2.default.createElement(_Player2.default, { parmas: parmas, destroy: destroy });
+          return _react2.default.createElement(_Player2.default, {
+            parmas: parmas,
+            destroy: destroy,
+          });
         });
         new ApplyLayer({ className: 'show-module' });
       }),
@@ -160,12 +167,16 @@ var _class = (function(_PureComponent) {
 
         return _react2.default.createElement(
           'div',
-          { className: 'page page-botready' },
+          {
+            className: (0, _classnames2.default)('page page-botready', { reset: this.props.running }),
+          },
           _react2.default.createElement('img', { className: 'logo', src: _botLog2.default }),
           _react2.default.createElement('img', { className: 'title', src: _botTitle2.default }),
           _react2.default.createElement(
             'div',
-            { className: 'bot-contain' },
+            {
+              className: (0, _classnames2.default)('bot-contain', { reset: this.props.running }),
+            },
             botVedio.map(function(item, index) {
               return index === 3
                 ? _react2.default.createElement(

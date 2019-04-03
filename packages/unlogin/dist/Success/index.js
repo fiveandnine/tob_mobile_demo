@@ -62,6 +62,10 @@ var _logo7 = require('./logo4.svg');
 
 var _logo8 = _interopRequireDefault(_logo7);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -90,7 +94,7 @@ var _class = (function(_PureComponent) {
       value: function render() {
         return _react2.default.createElement(
           'div',
-          { className: 'page page-success' },
+          { className: (0, _classnames2.default)('page page-success', { reset: this.props.running }) },
           _react2.default.createElement(
             'div',
             { className: 'title-contain' },

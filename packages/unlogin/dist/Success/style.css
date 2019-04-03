@@ -1,6 +1,9 @@
 .unlogin .page-success .title-contain {
   margin: 172px auto 0;
-  width: 438px; }
+  width: 438px;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.5s ease 0.3s; }
   .unlogin .page-success .title-contain .title {
     display: block; }
     .unlogin .page-success .title-contain .title:nth-of-type(1) {
@@ -19,7 +22,9 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 87px auto;
-  width: 500px; }
+  width: 500px;
+  opacity: 0;
+  transition: 0.5s ease-in; }
   .unlogin .page-success .success-contain .success-item {
     width: 245px;
     height: 250px; }
@@ -46,3 +51,7 @@
       border-bottom: 1px solid #DBE5FF; }
     .unlogin .page-success .success-contain .success-item:nth-of-type(3) {
       border-right: 1px solid #DBE5FF; }
+
+.unlogin .page-success.reset .title-contain, .unlogin .page-success.reset .success-contain, .unlogin .page-success.reset .success-contain {
+  opacity: 1;
+  transform: scale(1, 1) translate3d(0, 0, 0); }

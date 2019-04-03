@@ -3,13 +3,21 @@
     display: block;
     width: 380px;
     margin: 172px auto 0;
+    transform: translateY(200px);
+    transition: all 0.5s ease 0.2s;
+    opacity: 0;
   }
   .title2{
     display: block;
     width: 380px;
     margin: 24px auto 76px;
+    transform: translateY(200px);
+    transition: all 0.5s ease 0.3s;
+    opacity: 0;
   }
   .plan-contain{
+    opacity: 0;
+    transition: 0.5s ease-in;
     .plan-item{
       display: flex;
       align-items: center;
@@ -51,6 +59,12 @@
         display: inline-block;
         background: url('./arrow.svg') center / 100% no-repeat;
       }
+    }
+  }
+  &.reset{
+    .title1,.title2,.plan-contain{
+      opacity: 1;
+      transform: scale(1, 1) translate3d(0, 0, 0);
     }
   }
 }

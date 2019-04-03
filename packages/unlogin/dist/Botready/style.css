@@ -2,31 +2,70 @@
   display: block;
   width: 149px;
   height: 72px;
-  margin: 172px auto 0; }
+  margin: 172px auto 0;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s; }
 
 .unlogin .page-botready .title {
   display: block;
   width: 630px;
   height: 44px;
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.5s ease 0.3s; }
 
 .unlogin .page-botready .bot-contain {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
   margin-top: 110px; }
+  .unlogin .page-botready .bot-contain.reset .bot-item {
+    opacity: 1 !important;
+    transform: scale(1, 1) translate3d(0, 0, 0) !important; }
   .unlogin .page-botready .bot-contain .bot-item {
     height: 150px;
     width: 300px;
-    margin: 20px 0 0 0; }
+    margin: 20px 0 0 0;
+    transition: 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
     .unlogin .page-botready .bot-contain .bot-item img {
       width: 100%; }
     .unlogin .page-botready .bot-contain .bot-item.bot {
       width: 110px;
       display: flex;
       justify-self: center;
-      align-items: center; }
+      align-items: center;
+      transform: scale(0.5);
+      transform-origin: center; }
       .unlogin .page-botready .bot-contain .bot-item.bot img {
         margin-top: 24px; }
     .unlogin .page-botready .bot-contain .bot-item:nth-of-type(1) {
-      align-self: center; }
+      align-self: center;
+      transform: translateX(20px) translateY(-20px) scale(0.5);
+      transform-origin: top right;
+      opacity: 0.4; }
+    .unlogin .page-botready .bot-contain .bot-item:nth-of-type(2) {
+      align-self: center;
+      transform: translateX(-20px) translateY(-20px) scale(0.5);
+      transform-origin: top left;
+      opacity: 0.4; }
+    .unlogin .page-botready .bot-contain .bot-item:nth-of-type(3) {
+      align-self: center;
+      transform: translateX(20px) scale(0.5);
+      transform-origin: right;
+      opacity: 0.4; }
+    .unlogin .page-botready .bot-contain .bot-item:nth-of-type(5) {
+      align-self: center;
+      transform: translateX(-20px) scale(0.5);
+      transform-origin: left;
+      opacity: 0.4; }
+    .unlogin .page-botready .bot-contain .bot-item:nth-of-type(6) {
+      align-self: center;
+      transform: translateY(20px) scale(0.5);
+      transform-origin: bottom;
+      opacity: 0.4; }
+
+.unlogin .page-botready.reset .logo, .unlogin .page-botready.reset .title {
+  opacity: 1;
+  transform: scale(1, 1) translate3d(0, 0, 0); }

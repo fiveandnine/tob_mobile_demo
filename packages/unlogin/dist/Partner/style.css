@@ -4,8 +4,17 @@
   width: 100%;
   position: absolute;
   top: 188px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.5s ease 0.3s;
+  transform: translateY(200px);
+  opacity: 0; }
 
 .unlogin .page-partner .logo-milt {
   width: 614px;
-  margin-top: 292px; }
+  margin-top: 292px;
+  transition: all 0.5s ease 0.3s;
+  opacity: 0; }
+
+.unlogin .page-partner.reset .title, .unlogin .page-partner.reset .logo-milt {
+  opacity: 1;
+  transform: scale(1, 1) translate3d(0, 0, 0); }

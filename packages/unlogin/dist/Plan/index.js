@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 require('./style.css');
 
 var _title = require('./title1.svg');
@@ -147,7 +151,7 @@ var _class = (function(_PureComponent) {
 
         return _react2.default.createElement(
           'div',
-          { className: 'page page-plan' },
+          { className: (0, _classnames2.default)('page page-plan', { reset: this.props.running }) },
           _react2.default.createElement('img', { className: 'title1', src: _title2.default }),
           _react2.default.createElement('img', { className: 'title2', src: _title4.default }),
           _react2.default.createElement(

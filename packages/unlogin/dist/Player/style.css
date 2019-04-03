@@ -3,3 +3,15 @@
   width: 100%;
   z-index: 98;
   background: rgba(0, 0, 0, 0.35); }
+  .player-layer .close-play {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 10px;
+    z-index: 9; }
+    .player-layer .close-play:after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url("../close.svg") 100%/100%; }

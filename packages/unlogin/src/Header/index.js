@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react';
 import './style.scss';
 import layer from '../Home/layer';
 import Apply from '../Apply';
-import ShowModule from '../ShareModule';
+import SuccessModule from '../ShareModule/handlerSuccess';
+import RedPacketModule from '../ShareModule/handlerRedPacket';
 export default class extends PureComponent {
   handlerSee = () => {
     const { ApplyPage } = this.props,
@@ -15,7 +16,7 @@ export default class extends PureComponent {
     new ApplyLayer();
   };
   handlerShare = () => {
-    const ApplyLayer = layer(({ destroy }) => <ShowModule destroy={destroy} />);
+    const ApplyLayer = layer(({ destroy }) => <RedPacketModule type="redpacket" destroy={destroy} />);
     new ApplyLayer({ className: 'show-module' });
   };
 

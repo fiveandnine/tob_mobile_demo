@@ -70,14 +70,6 @@ var _contain2 = _interopRequireDefault(_contain);
 
 require('./style.css');
 
-var _layer = require('./Home/layer');
-
-var _layer2 = _interopRequireDefault(_layer);
-
-var _ShareModule = require('./ShareModule');
-
-var _ShareModule2 = _interopRequireDefault(_ShareModule);
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -149,12 +141,12 @@ var _class = (function(_PureComponent) {
             _Page2.default,
             { className: 'unlogin screen', index: this.state.index, onChange: this.handlerChange },
             _react2.default.createElement(_Home2.default, null),
-            _react2.default.createElement(_Aikey2.default, null),
-            _react2.default.createElement(_Botready2.default, null),
-            _react2.default.createElement(_Plan2.default, null),
-            _react2.default.createElement(_Success2.default, null),
-            _react2.default.createElement(_Iso2.default, null),
-            _react2.default.createElement(_Partner2.default, null),
+            _react2.default.createElement(_Aikey2.default, { running: this.state.index === 1 }),
+            _react2.default.createElement(_Botready2.default, { running: this.state.index === 2 }),
+            _react2.default.createElement(_Plan2.default, { running: this.state.index === 3 }),
+            _react2.default.createElement(_Success2.default, { running: this.state.index === 4 }),
+            _react2.default.createElement(_Iso2.default, { running: this.state.index === 5 }),
+            _react2.default.createElement(_Partner2.default, { running: this.state.index === 6 }),
             _react2.default.createElement(
               _contain2.default,
               null,
