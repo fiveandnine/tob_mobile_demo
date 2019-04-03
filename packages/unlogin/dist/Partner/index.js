@@ -25,9 +25,7 @@ function _interopRequireDefault(obj) {
 exports.default = function(props) {
   return _react2.default.createElement(
     'div',
-    {
-      className: (0, _classnames2.default)('page page-partner', { reset: props.running }),
-    },
+    { className: (0, _classnames2.default)('page page-partner', { reset: props.running }) },
     _react2.default.createElement('div', { className: 'title' }, '\u5BA2\u6237\u4FE1\u4EFB'),
     _react2.default.createElement('img', { className: 'logo-milt', src: _logo2.default })
   );

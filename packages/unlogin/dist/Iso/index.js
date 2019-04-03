@@ -67,9 +67,7 @@ var _class = (function(_PureComponent) {
       value: function render() {
         return _react2.default.createElement(
           'div',
-          {
-            className: (0, _classnames2.default)('page page-iso', { reset: this.props.running }),
-          },
+          { className: (0, _classnames2.default)('page page-iso', { reset: this.props.running }) },
           _react2.default.createElement('img', { className: 'title', src: _title2.default }),
           _react2.default.createElement('img', { className: 'title', src: _title4.default }),
           _react2.default.createElement(
